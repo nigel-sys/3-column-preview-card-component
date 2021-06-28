@@ -1,0 +1,139 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+#container {
+  display: flex;
+  width: 50%;
+  height: 600px;
+}
+
+#container div {
+  position: relative;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 3em;
+}
+
+#container div h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 50px;
+}
+
+#container div p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5em;
+}
+
+#container .sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0 0 5px;
+}
+
+#container .suvs {
+  background-color: hsl(184, 100%, 22%);
+  border-radius: none;
+}
+
+#container .lux {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+
+.attribution {
+  flex-basis: 100%;
+}
+
+.button {
+  position: absolute;
+  bottom: 60px;
+  border-radius: 40px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 10px 15px;
+  background-color: hsl(0, 0%, 95%);
+  border: solid hsl(0, 0%, 95%) 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  color: hsl(0, 0%, 95%);
+  border: solid hsl(0, 0%, 95%) 1px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.button-sedan {
+  color: hsl(31, 77%, 52%);
+}
+
+.button-sedan:hover {
+  background: hsl(31, 77%, 52%);
+}
+
+.button-suv {
+  color: hsl(184, 100%, 22%);
+}
+
+.button-suv:hover {
+  background: hsl(184, 100%, 22%);
+}
+
+.button-lux {
+  color: hsl(179, 100%, 13%);
+}
+
+.button-lux:hover {
+  background: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 1280px) {
+  #container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1152px) {
+  #container {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 25% 0;
+  }
+  #container div {
+    padding: 3em 3em 7em;
+  }
+  .button {
+    bottom: 30px;
+  }
+  #container .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 8px 0 0;
+  }
+  #container .lux {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 8px 8px;
+  }
+}
