@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/used-flexbox-and-position-properties-M1b2LcY9L
+- Live Site URL: https://nigel-sys.github.io/3-column-preview-card-component/
 
 ### Built with
 
